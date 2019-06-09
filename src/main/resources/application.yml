@@ -1,0 +1,22 @@
+my:
+  data:
+    message: from default
+    mode: from default
+    code: from default
+    
+---
+spring:
+    profiles:
+       active: qa
+
+---
+my:
+ data:
+   message: from qa
+   mode: from yml qa  
+---
+
+my:
+ data:
+   message: from dev
+   mode: from yml dev               
